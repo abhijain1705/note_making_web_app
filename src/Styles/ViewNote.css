@@ -1,0 +1,52 @@
+.View_div {
+  background-color: #e9deae;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.Note_bar {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.note_array {
+  width: 50%;
+  margin: 5rem auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: start;
+}
+
+.note {
+  width: 100%;
+  background-color: rgba(75, 242, 38, 0.5);
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 584px) {
+  .Note_bar {
+    width: 80%;
+  }
+
+  .note_array {
+    width: 90%;
+  }
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

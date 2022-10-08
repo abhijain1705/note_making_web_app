@@ -1,0 +1,115 @@
+/* text editor */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 8rem auto;
+}
+
+.container h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: gold;
+  margin: 10px 0;
+}
+
+.container button,
+#colors {
+  font-family: "Mochiy Pop P One", sans-serif;
+  background-color: #6b7b8c;
+  padding: 8px 12px;
+  margin: 8px 5px;
+  color: white;
+  border-style: none;
+}
+
+.container #titleArea {
+  width: 700px;
+  height: 100px;
+  margin: 1rem 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.container .addBtn {
+  width: 700px;
+  margin: 20px 0 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ef5b72;
+  border-radius: 4px;
+  color: white;
+  background-color: #ef5b72;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container .addBtn:hover {
+  color: #ef5b72;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.container #textArea {
+  width: 700px;
+  height: 300px;
+  margin: 20px 0 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.container button:hover {
+  opacity: 0.5;
+}
+
+.container button:nth-child(6):hover, .container button:nth-child(7):hover {
+  opacity: 1;
+}
+
+.char {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    margin-top: 15rem;
+    text-align: center;
+  }
+
+  .container .char {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .container #titleArea {
+    width: 90%;
+    margin: 1rem auto;
+    height: 100px;
+  }
+
+  .container #textArea {
+    width: 90%;
+    margin: 1rem auto;
+    height: 300px;
+  }
+
+  .container .addBtn {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
